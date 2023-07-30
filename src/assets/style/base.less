@@ -1,0 +1,61 @@
+body {
+  color: #424242;
+  /* 默认字体 */
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  /* 抗锯齿 */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  .slide-fade-enter-active {
+    transition: all .3s ease;
+  }
+  .slide-fade-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  }
+  .slide-fade-enter, .slide-fade-leave-to {
+    transform: translateX(10px);
+    opacity: 0;
+  }
+}
+body {margin: 0;}
+h2 {margin: 0;}
+ul {margin: 0;padding: 0;list-style: none;}
+p {margin: 0;}
+
+:root {
+  //变量
+  --theme-color: #577AB2;
+}
+
+//错误提示
+.tip-error {
+  background: #FF5252;
+  border: none;
+  .el-message__icon {
+    display: none;
+  }
+  .el-message__content {
+    color: white;
+  }
+}
+//成功提示
+.tip-success {
+  background: #00a03e;
+  border: none;
+  .el-message__icon {
+    display: none;
+  }
+  .el-message__content {
+    color: white;
+  }
+}
+//视频图标
+.el-icon-video-play {
+  font-size: 40px;
+  color: orange;
+}
+/* 关闭按钮 */
+.el-icon-error {
+  color: red;
+  font-size: 30px;
+  cursor: pointer;
+}
